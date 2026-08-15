@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FS CARDOSO POKÉMON | Cartas, Coleções e Muito Mais</title>
+<meta name="description" content="Loja especializada em cartas colecionáveis e produtos temáticos em Brasília. Pacotes, cartas raras, decks e acessórios.">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome (ícones sociais) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- CSS próprio -->
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fs fixed-top py-2">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.svg" alt="Logo FS Cardoso Pokémon">
+      <span>FS CARDOSO<small>POKÉMON • BRASÍLIA</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
+        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <a href="produtos.html" class="cart-btn me-2">
+          <i class="fa-solid fa-bag-shopping"></i> Carrinho
+          <span class="cart-badge">0</span>
+        </a>
+        <div class="nav-social d-none d-lg-flex">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5561998765432" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO / CARROSSEL DE DESTAQUE ===================== -->
+<header>
+  <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hero-slide" style="background-image:url('img/destaque1.svg');">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <span class="section-eyebrow">Bem-vindo(a) à</span>
+                <h1 class="hero-title mt-2">FS CARDOSO <span class="accent">POKÉMON</span></h1>
+                <p class="hero-sub mt-3">A sua loja de cartas colecionáveis em Brasília. Pacotes lacrados, cartas raras, decks completos e a comunidade mais apaixonada por criaturas de bolso da capital.</p>
+                <div class="mt-4 d-flex flex-wrap gap-3">
+                  <a href="produtos.html" class="btn-fs-primary"><i class="fa-solid fa-bag-shopping me-2"></i>Ver loja online</a>
+                  <a href="sobre.html" class="btn-fs-outline">Conheça a loja</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image:url('img/destaque2.svg');">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <span class="section-eyebrow">Coleção em Destaque</span>
+                <h1 class="hero-title mt-2">Cartas <span class="accent">Graduadas</span> e Raridades</h1>
+                <p class="hero-sub mt-3">Peças avaliadas, protegidas em case rígido e prontas para sua coleção ou para reforçar seu deck competitivo.</p>
+                <div class="mt-4 d-flex flex-wrap gap-3">
+                  <a href="produtos.html" class="btn-fs-primary"><i class="fa-solid fa-star me-2"></i>Cartas raras</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image:url('img/destaque3.svg');">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <span class="section-eyebrow">Visite-nos</span>
+                <h1 class="hero-title mt-2">Loja física no <span class="accent">Coração de Brasília</span></h1>
+                <p class="hero-sub mt-3">Venha trocar figurinhas — ou melhor, cartas — com outros treinadores. Torneios semanais e eventos de abertura de pacotes.</p>
+                <div class="mt-4 d-flex flex-wrap gap-3">
+                  <a href="contato.html" class="btn-fs-primary"><i class="fa-solid fa-location-dot me-2"></i>Como chegar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</header>
+
+<div class="divider-zig"></div>
+
+<!-- ===================== SOBRE NÓS (resumo) ===================== -->
+<section id="sobre" class="section-dark">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <span class="section-eyebrow">Sobre a loja</span>
+        <h2 class="mt-2 mb-3">Paixão por cartas, desde o primeiro pacote</h2>
+        <p class="text-paper-dim">A FS CARDOSO POKÉMON nasceu em Brasília com um propósito simples: reunir colecionadores, duelistas e curiosos em um só lugar. Trabalhamos com produtos originais, cartas avulsas selecionadas e um atendimento que trata cada cliente como parte da equipe.</p>
+        <div class="row mt-4 g-3">
+          <div class="col-6">
+            <h3 class="mb-0" style="color:var(--gold)">+3.500</h3>
+            <small class="text-paper-dim">Cartas em catálogo</small>
+          </div>
+          <div class="col-6">
+            <h3 class="mb-0" style="color:var(--gold)">+800</h3>
+            <small class="text-paper-dim">Treinadores atendidos</small>
+          </div>
+        </div>
+        <a href="sobre.html" class="btn-fs-outline mt-4 d-inline-block">Nossa história completa</a>
+      </div>
+      <div class="col-lg-6 reveal">
+        <img src="img/destaque2.svg" alt="Vitrine de cartas colecionáveis" class="img-fluid rounded-4 border border-2" style="border-color:var(--gold) !important;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRODUTOS EM DESTAQUE ===================== -->
+<section id="produtos" class="section-alt">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-eyebrow">Loja Online</span>
+      <h2 class="mt-2">Produtos em destaque</h2>
+      <p class="text-paper-dim">Uma amostra do nosso catálogo completo — veja tudo na página de Produtos.</p>
+    </div>
+    <div class="row g-4" id="destaqueProdutos"></div>
+    <div class="text-center mt-5 reveal">
+      <a href="produtos.html" class="btn-fs-primary"><i class="fa-solid fa-store me-2"></i>Ver catálogo completo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEPOIMENTOS (carousel) ===================== -->
+<section id="depoimentos" class="section-dark">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-eyebrow">Comunidade</span>
+      <h2 class="mt-2">O que os treinadores dizem</h2>
+    </div>
+    <div id="testiCarousel" class="carousel slide testi-carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="holo-card">
+            <img src="img/avatar1.svg" class="testi-avatar" alt="Foto de cliente">
+            <div class="stars">★★★★★</div>
+            <p class="mt-2 mb-1">"Comprei um deck completo e chegou tudo certinho, protegido e no prazo. Atendimento nota mil, já virei cliente fiel."</p>
+            <strong>Rafael A.</strong>
+            <div class="card-footer-num"><span>Cliente verificado</span><span>Brasília - DF</span></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="holo-card">
+            <img src="img/avatar2.svg" class="testi-avatar" alt="Foto de cliente">
+            <div class="stars">★★★★★</div>
+            <p class="mt-2 mb-1">"A melhor loja de cartas da cidade. Preço justo nas cartas raras e sempre tem gente disposta a trocar uma ideia sobre o meta."</p>
+            <strong>Camila S.</strong>
+            <div class="card-footer-num"><span>Cliente verificado</span><span>Brasília - DF</span></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="holo-card">
+            <img src="img/avatar3.svg" class="testi-avatar" alt="Foto de cliente">
+            <div class="stars">★★★★★</div>
+            <p class="mt-2 mb-1">"Levei meu filho no evento de abertura de pacotes e foi incrível. Loja organizada, equipe super atenciosa com as crianças."</p>
+            <strong>Marcos P.</strong>
+            <div class="card-footer-num"><span>Cliente verificado</span><span>Brasília - DF</span></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ (acordeão) ===================== -->
+<section id="faq" class="section-alt">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5 reveal">
+        <span class="section-eyebrow">Dúvidas</span>
+        <h2 class="mt-2">Perguntas frequentes</h2>
+        <p class="text-paper-dim">Não achou sua resposta? Fale com a gente na página de <a href="contato.html">Contato</a>.</p>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="accordion accordion-fs" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                As cartas são originais?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Sim! Trabalhamos apenas com produtos originais e lacrados de fábrica, além de cartas avulsas autenticadas pela nossa equipe.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Qual o prazo de entrega em Brasília?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Para o Distrito Federal, o prazo médio é de 1 a 3 dias úteis. Também oferecemos retirada gratuita na loja física.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Posso trocar ou devolver um produto?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Sim, produtos lacrados podem ser trocados em até 7 dias corridos após o recebimento, conforme o Código de Defesa do Consumidor.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Como funciona o pagamento?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Aceitamos cartão, Pix e boleto. O checkout da loja online é processado com confirmação instantânea.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA CONTATO ===================== -->
+<section class="section-paper">
+  <div class="container text-center reveal">
+    <span class="section-eyebrow">Fale conosco</span>
+    <h2 class="mt-2 mb-3">Pronto para montar sua próxima coleção?</h2>
+    <p class="mx-auto" style="max-width:38rem;">Tire dúvidas, agende uma visita ou peça uma cotação para compras em grande quantidade.</p>
+    <a href="contato.html" class="btn-fs-primary mt-2 d-inline-block"><i class="fa-solid fa-envelope me-2"></i>Ir para contato</a>
+  </div>
+</section>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="footer-fs">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5><img src="img/logo.svg" height="34" class="me-2" alt="Logo">FS CARDOSO POKÉMON</h5>
+        <p class="small mt-2">Sua loja de cartas colecionáveis em Brasília - DF. Pacotes, raridades, decks e acessórios para todos os treinadores.</p>
+        <div class="nav-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5561998765432" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h5>Navegação</h5>
+        <ul class="list-unstyled small">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contato</h5>
+        <ul class="list-unstyled small">
+          <li><i class="fa-solid fa-location-dot me-2"></i>SCLS 307, Bloco C, Loja 15 — Asa Sul, Brasília - DF</li>
+          <li class="mt-2"><i class="fa-solid fa-phone me-2"></i>(61) 99876-5432</li>
+          <li class="mt-2"><i class="fa-solid fa-envelope me-2"></i>contato@fscardosopokemon.com.br</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Horário</h5>
+        <ul class="list-unstyled small">
+          <li>Seg a Sex: 10h às 20h</li>
+          <li>Sábado: 10h às 18h</li>
+          <li>Domingo: 12h às 17h</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="mt-4" style="border-color:rgba(255,255,255,.1)">
+    <p class="small text-center mb-0">&copy; <span class="ano-atual"></span> FS CARDOSO POKÉMON — Projeto acadêmico (1º Bimestre). Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- Toast do carrinho -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:1100">
+  <div id="cartToast" class="toast align-items-center text-bg-dark border" role="alert">
+    <div class="d-flex">
+      <div class="toast-body"><i class="fa-solid fa-circle-check me-2" style="color:var(--gold)"></i>Item adicionado!</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  // Renderiza 3 produtos em destaque na home a partir do catálogo central
+  const destaqueEl = document.getElementById('destaqueProdutos');
+  if (destaqueEl) {
+    CATALOGO.slice(0, 3).forEach(p => {
+      destaqueEl.innerHTML += `
+      <div class="col-md-4 reveal">
+        <div class="holo-card">
+          <span class="card-type-pill">${p.energia}</span>
+          <img src="${p.img}" alt="${p.nome}" class="card-thumb">
+          <h5>${p.nome}</h5>
+          <div class="price-tag">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
+          <button class="add-cart-btn mt-3" onclick="CARRINHO.adicionar('${p.id}')"><i class="fa-solid fa-cart-plus me-1"></i> Adicionar</button>
+          <div class="card-footer-num"><span>${p.tipo}</span><span>Nº ${p.numero}</span></div>
+        </div>
+      </div>`;
+    });
+  }
+</script>
+</body>
+</html>

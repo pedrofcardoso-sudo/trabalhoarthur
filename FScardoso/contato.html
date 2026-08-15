@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato | FS CARDOSO POKÉMON</title>
+<meta name="description" content="Fale com a FS CARDOSO POKÉMON: telefone, WhatsApp, endereço e formulário de contato.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fs fixed-top py-2">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.svg" alt="Logo FS Cardoso Pokémon">
+      <span>FS CARDOSO<small>POKÉMON • BRASÍLIA</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
+        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <a href="produtos.html" class="cart-btn me-2">
+          <i class="fa-solid fa-bag-shopping"></i> Carrinho
+          <span class="cart-badge">0</span>
+        </a>
+        <div class="nav-social d-none d-lg-flex">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5561998765432" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== SUB-CABEÇALHO ===================== -->
+<header class="hero-slide" style="min-height:34vh; background-image:url('img/destaque3.svg');">
+  <div class="container">
+    <span class="section-eyebrow">Estamos por perto</span>
+    <h1 class="hero-title mt-2">Fale com a <span class="accent">FS Cardoso</span></h1>
+    <p class="hero-sub mt-3">Dúvidas, sugestões ou parcerias — nossa equipe responde rapidinho.</p>
+  </div>
+</header>
+
+<div class="divider-zig"></div>
+
+<!-- ===================== INFO + FORMULÁRIO ===================== -->
+<section class="section-dark">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Informações -->
+      <div class="col-lg-4 reveal">
+        <div class="holo-card mb-4">
+          <span class="card-type-pill">Endereço</span>
+          <h5 class="mt-3"><i class="fa-solid fa-location-dot me-2" style="color:var(--gold)"></i>Loja física</h5>
+          <p class="text-paper-dim mb-0">SCLS 307, Bloco C, Loja 15<br>Asa Sul, Brasília - DF<br>CEP 70.368-030</p>
+        </div>
+        <div class="holo-card mb-4">
+          <span class="card-type-pill">Telefone</span>
+          <h5 class="mt-3"><i class="fa-solid fa-phone me-2" style="color:var(--gold)"></i>Fale conosco</h5>
+          <p class="text-paper-dim mb-1">(61) 99876-5432</p>
+          <a href="https://wa.me/5561998765432" target="_blank" rel="noopener" class="btn-fs-outline mt-2 d-inline-block"><i class="fa-brands fa-whatsapp me-2"></i>Chamar no WhatsApp</a>
+        </div>
+        <div class="holo-card">
+          <span class="card-type-pill">Horário</span>
+          <h5 class="mt-3"><i class="fa-solid fa-clock me-2" style="color:var(--gold)"></i>Funcionamento</h5>
+          <ul class="text-paper-dim mb-0 ps-3">
+            <li>Seg a Sex: 10h às 20h</li>
+            <li>Sábado: 10h às 18h</li>
+            <li>Domingo: 12h às 17h</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <div class="col-lg-8 reveal">
+        <span class="section-eyebrow">Formulário</span>
+        <h2 class="mt-2 mb-4">Envie sua mensagem</h2>
+
+        <div id="contatoAlert" class="alert alert-success d-none" role="alert">
+          <i class="fa-solid fa-circle-check me-2"></i>Mensagem enviada com sucesso! Em breve retornaremos o contato.
+        </div>
+
+        <form id="formContato" class="form-fs needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome completo</label>
+              <input type="text" class="form-control" id="nome" required>
+              <div class="invalid-feedback">Por favor, informe seu nome.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Informe um e-mail válido.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="telefone" class="form-label">Telefone / WhatsApp</label>
+              <input type="tel" class="form-control" id="telefone" placeholder="(61) 9 9999-9999" required>
+              <div class="invalid-feedback">Informe um telefone para contato.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="assunto" class="form-label">Assunto</label>
+              <select class="form-select" id="assunto" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option>Dúvida sobre produto</option>
+                <option>Status de pedido</option>
+                <option>Parceria / Fornecedor</option>
+                <option>Trabalhe conosco</option>
+                <option>Outro</option>
+              </select>
+              <div class="invalid-feedback">Selecione um assunto.</div>
+            </div>
+            <div class="col-12">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+              <div class="invalid-feedback">Escreva sua mensagem.</div>
+            </div>
+            <div class="col-12 form-check ps-4">
+              <input class="form-check-input" type="checkbox" id="termos" required>
+              <label class="form-check-label small text-paper-dim" for="termos">Concordo em ser contatado(a) pela FS CARDOSO POKÉMON.</label>
+              <div class="invalid-feedback">É necessário aceitar para continuar.</div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-fs-primary"><i class="fa-solid fa-paper-plane me-2"></i>Enviar mensagem</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MAPA ===================== -->
+<section class="section-alt">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <span class="section-eyebrow">Localização</span>
+      <h2 class="mt-2">Venha nos visitar</h2>
+    </div>
+    <div class="reveal">
+      <iframe src="assets/mapa.html" class="map-frame w-100" style="height:420px;" loading="lazy" title="Mapa da loja FS Cardoso Pokémon em Brasília"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="footer-fs">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5><img src="img/logo.svg" height="34" class="me-2" alt="Logo">FS CARDOSO POKÉMON</h5>
+        <p class="small mt-2">Sua loja de cartas colecionáveis em Brasília - DF.</p>
+        <div class="nav-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5561998765432" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h5>Navegação</h5>
+        <ul class="list-unstyled small">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contato</h5>
+        <ul class="list-unstyled small">
+          <li><i class="fa-solid fa-location-dot me-2"></i>SCLS 307, Bloco C, Loja 15 — Asa Sul, Brasília - DF</li>
+          <li class="mt-2"><i class="fa-solid fa-phone me-2"></i>(61) 99876-5432</li>
+          <li class="mt-2"><i class="fa-solid fa-envelope me-2"></i>contato@fscardosopokemon.com.br</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Horário</h5>
+        <ul class="list-unstyled small">
+          <li>Seg a Sex: 10h às 20h</li>
+          <li>Sábado: 10h às 18h</li>
+          <li>Domingo: 12h às 17h</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="mt-4" style="border-color:rgba(255,255,255,.1)">
+    <p class="small text-center mb-0">&copy; <span class="ano-atual"></span> FS CARDOSO POKÉMON — Projeto acadêmico (1º Bimestre). Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2B90C"/>
+      <stop offset="55%" stop-color="#E3350D"/>
+      <stop offset="100%" stop-color="#B8250A"/>
+    </linearGradient>
+    <linearGradient id="logoShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <polygon points="60,4 111,32 111,88 60,116 9,88 9,32" fill="url(#logoGrad)" stroke="#0B1220" stroke-width="3"/>
+  <polygon points="60,4 111,32 111,60 60,60 9,60 9,32" fill="url(#logoShine)"/>
+  <polygon points="60,14 101,37 101,83 60,106 19,83 19,37" fill="none" stroke="#FBF7EF" stroke-width="2" stroke-dasharray="2 4" opacity="0.7"/>
+  <text x="60" y="70" text-anchor="middle" font-family="'Baloo 2', 'Arial Rounded MT Bold', sans-serif" font-weight="700" font-size="38" fill="#FBF7EF" stroke="#0B1220" stroke-width="1.5" paint-order="stroke">FS</text>
+  <polygon points="60,80 63.5,87 71,88 65.5,93 67,100.5 60,97 53,100.5 54.5,93 49,88 56.5,87" fill="#FBF7EF" stroke="#0B1220" stroke-width="1"/>
+</svg>

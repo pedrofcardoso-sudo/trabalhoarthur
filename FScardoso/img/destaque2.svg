@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#182A45"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <radialGradient id="creatureGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#E3350D" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E3350D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="creatureBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2B90C"/>
+      <stop offset="100%" stop-color="#E3350D"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <circle cx="400" cy="240" r="220" fill="url(#creatureGlow)"/>
+  <!-- shelf -->
+  <rect x="90" y="400" width="620" height="14" rx="4" fill="#2A3B57"/>
+  <rect x="120" y="414" width="10" height="60" fill="#2A3B57"/>
+  <rect x="670" y="414" width="10" height="60" fill="#2A3B57"/>
+  <!-- binder with cards -->
+  <g transform="translate(120,240)">
+    <rect x="0" y="0" width="180" height="160" rx="10" fill="#1F8A70" stroke="#0B1220" stroke-width="4"/>
+    <rect x="14" y="14" width="70" height="60" rx="6" fill="#FBF7EF" stroke="#0B1220" stroke-width="2"/>
+    <rect x="96" y="14" width="70" height="60" rx="6" fill="#FBF7EF" stroke="#0B1220" stroke-width="2"/>
+    <rect x="14" y="86" width="70" height="60" rx="6" fill="#FBF7EF" stroke="#0B1220" stroke-width="2"/>
+    <rect x="96" y="86" width="70" height="60" rx="6" fill="#FBF7EF" stroke="#0B1220" stroke-width="2"/>
+  </g>
+  <!-- original abstract collectible creature silhouette (generic, not depicting any copyrighted character) -->
+  <g transform="translate(400,150)">
+    <ellipse cx="60" cy="150" rx="70" ry="26" fill="#0B1220" opacity="0.3"/>
+    <circle cx="60" cy="80" r="66" fill="url(#creatureBody)" stroke="#0B1220" stroke-width="5"/>
+    <circle cx="34" cy="70" r="10" fill="#FBF7EF"/>
+    <circle cx="86" cy="70" r="10" fill="#FBF7EF"/>
+    <circle cx="34" cy="72" r="4.5" fill="#0B1220"/>
+    <circle cx="86" cy="72" r="4.5" fill="#0B1220"/>
+    <path d="M40 100 Q60 116 80 100" stroke="#0B1220" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <polygon points="10,30 -6,4 22,16" fill="#E3350D" stroke="#0B1220" stroke-width="3"/>
+    <polygon points="110,30 126,4 98,16" fill="#E3350D" stroke="#0B1220" stroke-width="3"/>
+  </g>
+  <!-- price tag / grading badge -->
+  <g transform="translate(600,260) rotate(8)">
+    <rect x="0" y="0" width="120" height="70" rx="10" fill="#FBF7EF" stroke="#0B1220" stroke-width="3"/>
+    <circle cx="20" cy="20" r="6" fill="#2B6CB0"/>
+    <text x="65" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#0B1220">GRAU 10</text>
+    <text x="65" y="52" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#E3350D">R$ 249,90</text>
+  </g>
+</svg>
